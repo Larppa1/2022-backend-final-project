@@ -4,7 +4,7 @@ const expenses = require('../models/expenses')
 
 router.get('/', async (req, res, next) => {
   const shop = req.query.shop
-  const category = req.query.shop
+  const category = req.query.category
   const date = req.query.date
   const month = req.query.month
   const year = req.query.year
