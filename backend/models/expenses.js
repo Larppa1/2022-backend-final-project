@@ -6,7 +6,7 @@ async function getExpenses() {
 }
 
 async function addExpense(amount, shop, category, date, month, year) {
-  const result = await connection.query(`INSERT INTO expenses (amount, shop, category, date, month, year) VALUES ("${amount}", "${shop}", "${category}", "${date}", "${month}", "${year}");`)
+  const result = await connection.query(`INSERT INTO expenses (amount, shop, category, date, month, year) VALUES ("${shop}", "${category}", "${date}", "${month}", "${year}", "${amount}");`)
   return result
 }
 
